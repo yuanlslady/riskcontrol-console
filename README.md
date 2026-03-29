@@ -70,9 +70,7 @@ npm run dev
 - `docs/screenshots/riskcontrol_industry_map.png`
 - `docs/screenshots/riskcontrol_trading_review.png`
 
-```md
-![Dashboard](docs/screenshots/dashboard.png)
-```
+![Dashboard](docs/screenshots/riskcontrol_dashboard.png)
 
 ## Roadmap
 
