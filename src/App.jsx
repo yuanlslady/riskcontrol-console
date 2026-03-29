@@ -50,8 +50,8 @@ const NAV = [
   ["positions-rationale", "Portfolio Overview / 持仓概览"],
   ["macro-framework", "Macro Framework / 宏观框架"],
   ["industry-map", "Industry Map / 产业地图"],
-  ["review-gate", "Review Gate / 交易审查"],
-  ["feedback", "Review / 复盘归因"],
+  ["review-gate", "Trade Review / 交易审查"],
+  ["feedback", "Attribution Analysis / 复盘归因"],
 ];
 
 const POSITION_DEFAULT = {
@@ -1481,7 +1481,7 @@ export default function App() {
 
         {tab === "review-gate" && (
           <section className="tab-panel">
-            <Header eyebrow="Review Gate / 交易审查" title="Decision Layer / 决策层" copy="纪律规则引擎先给出硬约束，再由 agent 补充解释和复盘建议。" />
+            <Header eyebrow="Trade Review / 交易审查" title="Trade Review Workspace / 交易审查工作台" copy="纪律规则引擎先给出硬约束，再由 agent 补充解释和复盘建议。" />
             <article className="card" style={{ marginBottom: "18px" }}>
               <strong>步骤 4</strong>
               <p className="panel-copy">{state.positions.length ? "观察名单先行。先确认标的是否已纳入观察，再填最少 3 项：操作、目标仓位、本次操作依据。其余高级项只在必要时展开。" : "如果是新标的，先在本页加入观察名单，再补交易审查；如果是已有持仓，再回“持仓概览”核对持仓台账。"}</p>
@@ -1599,10 +1599,10 @@ export default function App() {
 
         {tab === "feedback" && (
           <section className="tab-panel">
-            <Header eyebrow="Review / 复盘归因" title="Review Archive / 复盘归因" copy="把执行偏差、错误标签和后续改进沉淀成长期记忆，而不是只看盈亏结果。" />
+            <Header eyebrow="Attribution Analysis / 复盘归因" title="Attribution Analysis Archive / 复盘归因档案" copy="把执行偏差、错误标签和后续改进沉淀成长期记忆，而不是只看盈亏结果。" />
             <article className="card" style={{ marginBottom: "18px" }}>
               <strong>步骤 5</strong>
-              <p className="panel-copy">{state.lastReview ? "交易完成后，先写清操作复盘，再打错误标签和教训。" : "你还没有最近一次交易审查记录。建议先去“交易审查”完成一笔判断，再回来复盘。"}</p>
+              <p className="panel-copy">{state.lastReview ? "交易完成后，先写清操作复盘，再打错误标签和教训。" : "你还没有最近一次交易审查记录。建议先去“Trade Review / 交易审查”完成一笔判断，再回来复盘。"}</p>
             </article>
             <div className="panel-split">
               <div className="card">
@@ -1634,7 +1634,7 @@ export default function App() {
                       <button className="button button-secondary" type="button" onClick={runAgentReflection} disabled={reflectionStatus === "loading"}>{reflectionStatus === "loading" ? "Running..." : "Generate Post-trade Memo / 生成投后复盘纪要"}</button>
                     </div>
                   </form>
-                ) : <p className="save-status">先在“交易审查”里跑一笔审查，再回来补复盘记录。</p>}
+                ) : <p className="save-status">先在“Trade Review / 交易审查”里跑一笔审查，再回来补复盘记录。</p>}
                 {lastReview?.agentReflection ? <article className="result-card" style={{ marginBottom: "14px" }}><div className="form-header"><h4>Post-trade Memo / 投后复盘纪要</h4><span className="badge info">{lastReview.agentReflection.mode}</span></div><p className="agent-output">{lastReview.agentReflection.text}</p></article> : null}
                 <div className="stack-list">
                   {state.reviews.length ? state.reviews.slice(0, 6).map((item) => (
@@ -1644,7 +1644,7 @@ export default function App() {
                       <p>{item.actionReview || item.reason || "暂无复盘内容"}</p>
                       <div className="chip-row">{(item.mistakeTags || []).map((tag) => <span key={tag} className="chip warning">{tag}</span>)}</div>
                     </article>
-                  )) : <p className="save-status">先完成一次交易审查和复盘，记录才会出现在这里。</p>}
+                  )) : <p className="save-status">先完成一次 Trade Review 和复盘，记录才会出现在这里。</p>}
                 </div>
               </div>
               <div className="card">
