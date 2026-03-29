@@ -63,14 +63,10 @@ npm run dev
 - `AGENT_SETUP.md`
 - `FRIEND_TEST_CHECKLIST.md`
 
-## 截图占位
-
-- `docs/screenshots/riskcontrol_dashboard.png`
-- `docs/screenshots/riskcontrol_macro_framework.png`
-- `docs/screenshots/riskcontrol_industry_map.png`
-- `docs/screenshots/riskcontrol_trading_review.png`
-
 ![Dashboard](docs/screenshots/riskcontrol_dashboard.png)
+![Macro Framework](docs/screenshots/riskcontrol_macro_framework.png)
+![Industry Map](docs/screenshots/riskcontrol_industry_map.png)
+![Trading Review](docs/screenshots/riskcontrol_trading_review.png)
 
 ## Roadmap
 
