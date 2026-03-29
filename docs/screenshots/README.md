@@ -1,10 +1,7 @@
 # Screenshots
+<img width="2531" height="1249" alt="image" src="https://github.com/user-attachments/assets/066b31da-6a35-4a92-a56f-33d014081228" />
 
-把用于 README / 发布宣传的截图放到这个目录。
 
-建议命名：
-
-- `dashboard.png`
 - `review.png`
 - `memo.png`
 
