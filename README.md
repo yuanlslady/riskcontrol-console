@@ -1,6 +1,6 @@
 # RiskControl / 投资纪律与风控工作台
 
-一个面向个人投资者的“流程化风控/交易纪律”前端应用：用更清晰的结构把**持仓 → 交易审查 → 投前纪要 → 投后复盘 → 事件记录**串起来，并支持通过 **Supabase Edge Function** 统一代理调用模型（Memo 生成 + 截图 OCR 导入），避免在浏览器暴露模型 Key。
+一个面向个人专业投资者的“流程化风控/交易纪律”前端应用：用更清晰的结构把**持仓 → 交易审查 → 投前纪要 → 投后复盘 → 事件记录**串起来，并支持通过 **Supabase Edge Function** 统一代理调用模型（Memo 生成 + 截图 OCR 导入）。
 
 ## 在线体验
 
@@ -65,13 +65,10 @@ npm run dev
 
 ## 截图占位
 
-把截图放到 `docs/screenshots/`，并在这里替换为真实文件名：
-
-- `docs/screenshots/dashboard.png`
-- `docs/screenshots/review.png`
-- `docs/screenshots/memo.png`
-
-示例（占位）：
+- `docs/screenshots/riskcontrol_dashboard.png`
+- `docs/screenshots/riskcontrol_macro_framework.png`
+- `docs/screenshots/riskcontrol_industry_map.png`
+- `docs/screenshots/riskcontrol_trading_review.png`
 
 ```md
 ![Dashboard](docs/screenshots/dashboard.png)
@@ -80,11 +77,6 @@ npm run dev
 ## Roadmap
 
 见 `ROADMAP.md`。
-
-## 贡献与反馈
-
-- 提 Bug / 提需求：使用 GitHub Issue 模板
-- 提交 PR：见 `CONTRIBUTING.md`
 
 ## License
 MIT License（见 `LICENSE`）。
