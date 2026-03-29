@@ -1,0 +1,38 @@
+name: Feature request
+description: Suggest an idea for this project.
+title: "[Feature] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        这个项目更偏“流程产品”，欢迎从你的真实交易/复盘习惯出发提建议。
+  - type: textarea
+    id: problem
+    attributes:
+      label: 你想解决什么问题？
+      description: 你遇到的痛点是什么？在哪个环节卡住？
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 你建议怎么做？
+      description: 你希望新增/修改什么流程、页面或字段？
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 备选方案
+      description: 你想过哪些替代方案？为什么不够好？
+    validations:
+      required: false
+  - type: textarea
+    id: context
+    attributes:
+      label: 补充信息
+      description: 截图、示例、参考链接等。
+    validations:
+      required: false
+

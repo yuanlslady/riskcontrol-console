@@ -1,0 +1,2 @@
+[functions.investment-agent]
+verify_jwt = false

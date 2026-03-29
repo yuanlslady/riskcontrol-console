@@ -1,0 +1,9 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Demo
+    url: https://riskcontrol-demo.vercel.app
+    about: 内置示例数据，可直接体验流程
+  - name: 真实测试版
+    url: https://riskcontrol-app.vercel.app
+    about: 可注册登录，使用自己的数据体验
+
